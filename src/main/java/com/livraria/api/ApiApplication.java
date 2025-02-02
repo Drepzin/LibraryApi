@@ -17,10 +17,8 @@ public class ApiApplication implements CommandLineRunner {
 		SpringApplication.run(ApiApplication.class, args);
 	}
 
-	@Autowired
-	PasswordEncoder passwordEncoder;
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(passwordEncoder.encode("1234"));
+
 	}
 }
